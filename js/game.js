@@ -9,20 +9,24 @@ var lvl2Key = document.createElement("img");
 var lvlSection1 = document.getElementById("lvlsection1");
 var key = false;
 
-function onloadGame() {
 
-	lvlTitle.innerHTML = "Escape the cops";	
-	lvlOption1.innerHTML ="Start the game";
-	lvlOption1.setAttribute("onclick","lvl1()");
-	lvlOptions.appendChild(lvlOption1);
-	lvlImg.setAttribute("src","./foto/0.jpg");
-	lvlText.innerHTML = "Je bent een cocaine handelaar en wordt gezocht door de politie. Door een anonieme tip is de politie er achter gekomen waar je zit en hebben je omsingelt, jij moet proberen te ontsnappen. Veel succes!!";
-	console.log(lvlTitle);
-	key = false;
+function onloadGame() {
+	 var lvlAudio = document.getElementById("lvlaudio");
+	 lvlTitle.innerHTML = "Escape the cops";	
+	 lvlOption1.innerHTML ="Start the game";
+	 lvlOption1.setAttribute("onclick","lvl1()");
+	 lvlOptions.appendChild(lvlOption1);
+	 lvlImg.setAttribute("src","foto/0.jpg");
+	 lvlText.innerHTML = "Je bent een cocaine handelaar en wordt gezocht door de politie. Door een anonieme tip is de politie er achter gekomen waar je zit en hebben je omsingelt, jij moet proberen te ontsnappen. Veel succes!!";
+	 console.log(lvlTitle);
+	 key = false; 
+	 lvlAudio.src="sounds/startsound.mp3";	 
 }
 
 function lvl1() 
 {
+	var lvlAudio = document.getElementById("lvlaudio");
+	lvlAudio.src= ""
 	lvlTitle.innerHTML = "De achtertuin";
 	lvlOptions.appendChild(lvlOption1);
 	lvlImg.src = "./foto/1.0.jpg";
@@ -32,7 +36,7 @@ function lvl1()
 	lvlOptions.appendChild(lvlOption2);
 	lvlOption2.setAttribute("onclick","lvl1fallPad()");
 	lvlOption1.setAttribute("onclick","lvl2()");
-	console.log(lvlTitle);
+	console.log(lvlTitle);		
 }
 
 function lvl1fallPad() 
