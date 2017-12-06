@@ -61,7 +61,7 @@ function lvl1fallEnd1()
 function lvl1fallEnd2()
 {
 	lvlImg.src = "./foto/1.2.2.jpg";
-	lvlText.innerHTML = "Je bent neergeschoten door de poltie terwel je naar de auto proberden te gaan";
+	lvlText.innerHTML = "Je bent neergeschoten door de poltie terwel je naar de auto probeerde te gaan";
 	lvlOption1.innerHTML = "Restart";
 	lvlOption1.setAttribute("onclick", "onloadGame()");
 	lvlTitle.innerHTML = "Game Over";
@@ -111,7 +111,7 @@ function heeftKey()
 function lvl3()
 {
 	lvlTitle.innerHTML = "Een telefoontje plegen";
-	lvlText.innerHTML = "Je heb een telefoon gevonden je kan er één telefoontje mee doen, wie ga je bellen? ";
+	lvlText.innerHTML = "Je heb een telefoon gevonden je kan er één keer mee bellen, wie ga je bellen? ";
 	lvlImg.src = "./foto/3.0.jpg";
 	lvlOption1.innerHTML = "Je beld een vriend voor een vlucht voertuig";
 	lvlOption1.setAttribute("onclick", "lvl3fallPad()");
@@ -123,8 +123,8 @@ function lvl3()
 
 function lvl3fallPad()
 {
-	lvlTitle.innerHTML = "Een vluchtauto kiezen";
-	lvlText.innerHTML = "Je heb een telefoon gevonden je kan er één telefoontje mee doen, wie ga je bellen? ";
+	lvlTitle.innerHTML = "Een vlucht voertuig kiezen";
+	lvlText.innerHTML = "Je beld je vriend voor een vlucht voertuig, hij kan 3 verschillende voertuigen regelen maar je kan er maar 1 kiezen. Welke wordt het?";
 	lvlImg.src = "./foto/3.1.0.jpg";
 	lvlOption1.innerHTML = "Een heli";
 	lvlOption1.setAttribute("onclick","lvl3fallEnd1()");
@@ -198,7 +198,7 @@ function lvl4fallPad()
 function lvl5()
 {
 	lvlTitle.innerHTML = "Onderhandelen met de politie";
-	lvlText.innerHTML = "Ze zijn geintresseerd in onderhandelen over een bedrag voor jullie vrijlating en een auto om we te komen. ";
+	lvlText.innerHTML = "Ze zijn geintresseerd in onderhandelen over een bedrag voor jullie vrijlating en een auto om weg te komen. ";
 	lvlImg.src = "./foto/5.0.jpg";
 	lvlOption1.innerHTML = "Je stelt een bedrag van 30 miljoen voor, maar je bent van plan om nep geld te geven.";
 	lvlOption1.setAttribute("onclick", "lvl6()");
@@ -257,7 +257,7 @@ function lvl6fallEnd2()
 {
 	lvlTitle.innerHTML = "Game Over";
 	lvlImg.src = "./foto/6.1.2.jpg";
-	lvlText.innerHTML = "De politie maakt het niet uit dat je een gijzelaar hebt en rush naar binnen, waar jij bij omkomt omdat je je verzette. ";
+	lvlText.innerHTML = "De politie maakt het niet uit dat je een gijzelaar hebt en rusht naar binnen, waar jij bij omkomt omdat je je verzette. ";
 	lvlOption1.innerHTML = "Restart";
 	lvlOption1.setAttribute("onclick", "onloadGame()");	
 	lvlOption2.parentNode.removeChild(lvlOption2);
