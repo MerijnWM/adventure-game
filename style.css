@@ -1,0 +1,46 @@
+body{
+	margin: 0px;
+	background-color: #eee;	
+}		
+
+main{
+	display: flex;
+	justify-content: space-around;
+}
+
+#lvlimg{
+	border: 10px solid black;
+	height: 400px;
+	width: 750px;
+}
+
+section{
+	text-align: center;
+	margin: 10px;	
+	margin-top: 30px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+p{
+	margin: auto;
+	font-size: 20px;
+	margin-top: 100px;
+	width: 500px;
+}
+
+li{
+	padding: 20px;
+	margin: 10px;
+	list-style-type: none;
+	width: 400px;
+	height: 25px;
+	background-color: red;
+	border: 5px solid black;
+	color: white;
+}
